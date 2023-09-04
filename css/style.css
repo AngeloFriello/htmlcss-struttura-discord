@@ -1,3 +1,5 @@
+/*REGOLE DI RESET*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,20 +12,23 @@ body{
     flex-direction: column;
     align-items: center;
 }
+header ,  main , footer{
+    width: 100%;
+}
 
 /* REGOLE DI DEBUG */
-.debug .conteiner{
+.debug .container{
     border: 1px solid black;
 }
 
 .debug .row{
-    border: 1px solid blue;
     padding: 10px;
     min-height: 50px;
 }
 
 .debug [class^='col-'] {
     min-height: 20px;
+    border: 1px dashed black;
 }
 
 .debug .col-2{
@@ -65,6 +70,10 @@ body{
     height: 500px;
 }
 
+.sect-7 .col-4{
+    height: 300px;
+}
+
 .sect-1 .col-2 {
     height: 30px;
 }
@@ -72,17 +81,21 @@ body{
     height: 30px;
 }
 
+.sect-1 .col-8{
+    background-color: orange;
+}
+
 /* CONTENITORI */
 
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 800px;
 }
 
-.conteiner{
-    width: 200vh;
+.container{
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -117,6 +130,23 @@ body{
     flex-basis: calc(100%);
 }
 
-section{
-    background-color: aquamarine;
+.sect-1{
+    background-color: aqua;
 }
+
+.sect-2{
+    background-color: blue;
+}
+
+.sect-3, .sect-5{
+    background-color: white;
+}
+
+.sect-4, .sect-6{
+    background-color: lightgrey;
+}
+
+.sect-7, .sect-8{
+    background-color: darkslategray;
+}
+
