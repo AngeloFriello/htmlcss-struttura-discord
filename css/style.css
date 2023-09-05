@@ -10,9 +10,8 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-header ,  main , footer{
+header ,  main , footer , section{
     width: 100%;
 }
 
@@ -23,7 +22,6 @@ header ,  main , footer{
 
 .debug .row{
     padding: 10px;
-    min-height: 50px;
 }
 
 .debug [class^='col-'] {
@@ -90,14 +88,16 @@ header ,  main , footer{
 .row{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
-    width: 800px;
+    
 }
 
 .container{
-    width: 100%;
+    width: 800px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 /* COLONNE */
@@ -132,23 +132,25 @@ header ,  main , footer{
     justify-content: space-between;
 }
 
-.sect-1{
+/* SEZIONI */
+
+.bg-water{
     background-color: aqua;
 }
 
-.sect-2{
+.bg-blu{
     background-color: blue;
 }
 
-.sect-3, .sect-5{
+.bg-white{
     background-color: white;
 }
 
-.sect-4, .sect-6{
+.bg-lightgrey{
     background-color: lightgrey;
 }
 
-.sect-7, .sect-8{
+.bg-darkgrey{
     background-color: darkslategray;
 }
 
